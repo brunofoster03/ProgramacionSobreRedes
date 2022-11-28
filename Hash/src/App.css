@@ -1,0 +1,256 @@
+.App{
+  background: rgb(122, 122, 122);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opciones{
+  display: flex;
+  gap: 20px;
+}
+
+.opciones button{
+  width: 180px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: white;
+  background: rgb(0, 157, 255);
+  box-shadow: 0px 0px 10px black;
+}
+
+.opciones button:hover{
+  transform: scale(0.98);
+  box-shadow: 0px 0px 30px black;
+  background: rgb(0, 115, 187);
+}
+
+.cerrar{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+.menuagregardatos{
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px black;
+}
+.menuagregardatos form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menuagregardatos form label{
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.menuagregardatos form input{
+  width: 200px;
+  height: 25px;
+  border-radius: 3px;
+  background: rgb(21,21,21);
+  color: white;
+}
+.menuagregardatos form button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: lime;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+  cursor: pointer;
+}
+
+.menuactualizardatos{
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px black;
+}
+.menuactualizardatos form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menuactualizardatos form label{
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.menuactualizardatos form input{
+  width: 200px;
+  height: 25px;
+  border-radius: 3px;
+  background: rgb(21,21,21);
+  color: white;
+}
+.menuactualizardatos form button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: lime;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+  cursor: pointer;
+}
+
+.menueliminardatos{
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px black;
+}
+.menueliminardatos form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menueliminardatos form label{
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.menueliminardatos form input{
+  width: 200px;
+  height: 25px;
+  border-radius: 3px;
+  background: rgb(21,21,21);
+  color: white;
+}
+.menueliminardatos form button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: lime;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+  cursor: pointer;
+}
+
+.menumostrardatos{
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.datos{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 90%;
+  margin-left: 10%;
+  height: 180px;
+}
+.menumostrardatos label{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+.menumostrardatos label::after{
+  content: '';
+  background: rgb(107, 107, 107);
+  width: 100%;
+  height: 1px;
+}
+
+.menuconsultardatos{
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px black;
+  flex-direction: column;
+  gap: 20px;
+}
+.menuconsultardatos form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menuconsultardatos form label{
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.menuconsultardatos form input{
+  width: 200px;
+  height: 25px;
+  border-radius: 3px;
+  background: rgb(21,21,21);
+  color: white;
+}
+.menuconsultardatos form button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: lime;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+  cursor: pointer;
+}
+
+.datosbuscados{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Rubik', sans-serif;
+}
